@@ -1,0 +1,473 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  background-color: #337ab7;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.odontograma-container {
+  padding: px;
+}
+
+.botonera {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 6px;
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.botonera button {
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  white-space: normal;
+  text-align: center;
+  height: 36px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+  color: rgb(5, 5, 5);
+}
+
+.botonera .fractura:hover { background-color: #c9302c; }
+.botonera .obturacion:hover { background-color: #286090; }
+.botonera .extraccion:hover { background-color: #ec971f; }
+.botonera .a-extraer:hover { background-color: #f1b93c; }
+.botonera .puente:hover { background-color: #31b0d5; }
+.botonera .borrar:hover { background-color: #cccccc; }
+.botonera .ap-ort-fijo:hover { background-color: #bbdefb; }
+.botonera .ap-ort-removible:hover { background-color: #b2ebf2; }
+.botonera .caries:hover { background-color: #ffcccb; }
+.botonera .corona-def:hover { background-color: #ffe082; }
+.botonera .corona-temp:hover { background-color: #ffecb3; }
+.botonera .desgaste:hover { background-color: #d7ccc8; }
+.botonera .diastema:hover { background-color: #c5cae9; }
+.botonera .diente-ausente:hover { background-color: #e0f2f1; }
+.botonera .diente-discromico:hover { background-color: #f8bbd0; }
+.botonera .diente-ectopico:hover { background-color: #c8e6c9; }
+.botonera .diente-clavija:hover { background-color: #f0f4c3; }
+.botonera .diente-extruido:hover { background-color: #ffe0b2; }
+.botonera .diente-intruido:hover { background-color: #d1c4e9; }
+.botonera .edentulo-total:hover { background-color: #ffccbc; }
+.botonera .geminacion:hover { background-color: #f3e5f5; }
+.botonera .giroversion:hover { background-color: #f5f5f5; }
+.botonera .impactacion:hover { background-color: #e6ee9c; }
+.botonera .implante:hover { background-color: #b0bec5; }
+.botonera .macrodoncia:hover { background-color: #ffe57f; }
+.botonera .microdoncia:hover { background-color: #b2dfdb; }
+.botonera .migracion:hover { background-color: #b3e5fc; }
+.botonera .movilidad:hover { background-color: #cfd8dc; }
+.botonera .protesis-fija:hover { background-color: #e1bee7; }
+.botonera .protesis-removible:hover { background-color: #dcedc8; }
+.botonera .protesis-total:hover { background-color: #f8bbd0; }
+.botonera .remanente:hover { background-color: #ffe0b2; }
+.botonera .restauracion:hover { background-color: #c8e6c9; }
+.botonera .restauracion-temp:hover { background-color: #ffecb3; }
+.botonera .semi-impactacion:hover { background-color: #e1f5fe; }
+.botonera .supernumerario:hover { background-color: #fce4ec; }
+.botonera .transposicion:hover { background-color: #f3e5f5; }
+.botonera .tratamiento-pulpar:hover { background-color: #d7ccc8; }
+.botonera .endodoncia:hover { background-color: #f0f4c3; }
+.botonera .periodoncia:hover { background-color: #dcedc8; }
+.botonera .ortodoncia:hover { background-color: #b3e5fc; }
+.botonera .odontopediatria:hover { background-color: #ffccbc; }
+.botonera .maxilofacial:hover { background-color: #d1c4e9; }
+.botonera .general:hover { background-color: #e0f7fa; }
+.botonera .estetica:hover { background-color: #f8bbd0; }
+
+
+
+
+
+
+.cuadrante-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 100px solid white;
+}
+
+.cuadrante {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px;
+  padding-left: 110px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+
+/* Cuadrante 1 (Superior Izquierdo) - mover a la derecha */
+.cuadrante:nth-child(1) {
+  border-top: none;
+  border-left: none;
+  left: 100px; /* Desplazamiento hacia la derecha */
+  
+}
+.cuadrante:nth-child(2) {
+  border-top: none;
+  border-left: none;
+  left: -100px; /* Desplazamiento hacia la derecha */
+}
+.cuadrante:nth-child(3) {
+  border-top: none;
+  border-left: none;
+  left: 100px; /* Desplazamiento hacia la derecha */
+}
+.cuadrante:nth-child(4) {
+  border-top: none;
+  border-left: none;
+  left: -100px; /* Desplazamiento hacia la derecha */
+}
+
+
+
+/* Quitar bordes externos para formar la cruz */
+.cuadrante:nth-child(1) { border-top: none; border-left: none; }
+.cuadrante:nth-child(2) { border-top: none; border-right: none; }
+.cuadrante:nth-child(3) { border-bottom: none; border-left: none; }
+.cuadrante:nth-child(4) { border-bottom: none; border-right: none; }
+
+/* PIEZAS */
+.pieza {
+  width: 40px;
+  top: 60%;
+  height: 40px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pieza3 {
+  width: 40px;
+  top: 60%;
+  height: 40px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-0px, -50px); /* mueve horizontal y vertical */
+}
+/* ZONAS DENTRO DEL DIENTE */
+.pieza3 .zona {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.pieza4 {
+  width: 40px;
+  top: 60%;
+  height: 40px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-0px, -50px); /* mueve horizontal y vertical */
+}
+.pieza4 .zona {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+/* ZONAS DENTRO DEL DIENTE */
+.pieza .zona {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+/* Superior (arriba) */
+.zona.superior {
+  top: 0;
+  left: 25%;
+  border-bottom: none;
+  height: 25%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Inferior (abajo) */
+.zona.inferior {
+  bottom: 0;
+  left: 25%;
+  border-top: none;
+  height: 25%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Izquierda */
+.zona.izquierda {
+  left: 0;
+  top: 25%;
+  border-right: none;
+  width: 25%;
+  height: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Derecha */
+.zona.derecha {
+  right: 0;
+  top: 25%;
+  border-left: none;
+  width: 25%;
+  height: 50%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Centro */
+.zona.central {
+  top: 25%;
+  left: 25%;
+  background-color: rgb(245, 238, 238);
+}
+
+/* Efecto de sobreselección para las zonas del diente */
+.zona:hover {
+  border: 2px solid #4dc3f7;  /* Color de la sobreselección */
+  background-color: rgba(77, 195, 247, 0.2);  /* Fondo semitransparente para resaltar */
+}
+
+/* Cuando se selecciona una zona, se mantiene el color */
+.zona.seleccionada {
+  background-color: #4dc3f7;
+  border: 2px solid #4dc3f7;
+}
+
+/* Número de la pieza */
+.numero-cuadrante1 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4dc3f7;
+  color: white;
+  border-radius: 10px;
+  padding: 3px 40px;
+  font-size: 20px;
+}
+
+.numero-cuadrante2 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4dc3f7;
+  color: white;
+  border-radius: 10px;
+  padding: 3px 50px;
+  font-size: 20px;
+}
+.numero-cuadrante3 {
+  position: absolute;
+  top: -90px;
+  left: 21px;
+  transform: translateX(-50%);
+  background-color: #4dc3f7;
+  color: white;
+  border-radius: 10px;
+  padding: 3px 40px;
+  font-size: 20px;
+}
+.numero-cuadrante4 {
+  position: absolute;
+  top: -90px;
+  left: 53%;
+  transform: translateX(-50%);
+  background-color: #4dc3f7;
+  color: white;
+  border-radius: 10px;
+  padding: 3px 50px;
+  font-size: 20px;
+  
+}
+
+
+/* Leyenda de colores */
+.leyenda {
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.leyenda div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cuadro {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.rojo { background-color: #d9534f; }
+.azul { background-color: #337ab7; }
+.gris { background-color: #777; border-radius: 50%; }
+
+/* Opcional: para destacar zonas seleccionadas */
+.zona.seleccionada {
+  background-color: #4dc3f7;
+}
+
+
+.img-dientes1 {
+  width: 30px;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  z-index: 1;
+  position: relative;
+  top: -41px;
+  left: -40px;
+}
+.img-dientes2 {
+  width: 30px;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  z-index: 1;
+  position: relative;
+  top: -41px;
+  left: -40px;
+}
+.img-dientes3 {
+  width: 30px;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  z-index: 1;
+  position: relative;
+  top: 70px;
+  left: -40px;
+}
+
+.img-dientes4 {
+  width: 30px;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  z-index: 1;
+  position: relative;
+  top: 70px;
+  left: -40px;
+}
+
+.Numeros_superior {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.Numeros_superior div {
+  border: 1px solid black;
+  padding: 10px 34px;
+  min-width: 25px;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  transform: translate(-10px, 160px);
+}
+.Numeros_Inferiores {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.Numeros_Inferiores div {
+  border: 1px solid black;
+  padding: 10px 33px;
+  min-width: 25px;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  transform: translate(-10px, 760px);
+}
+
+
+/* --- Responsividad para pantallas pequeñas --- */
+@media (max-width: 768px) {
+  .cuadrante {
+    width: 100%;
+    padding: 40px 20px;
+    left: 0 !important;
+  }
+
+  .numero-cuadrante1,
+  .numero-cuadrante2,
+  .numero-cuadrante3,
+  .numero-cuadrante4 {
+    font-size: 14px;
+    padding: 3px 20px;
+    top: auto;
+  }
+
+  .botonera {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    padding: 5px;
+  }
+
+  .pieza,
+  .pieza3,
+  .pieza4 {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    transform: translate(0, -20px);
+  }
+
+  .img-dientes1,
+  .img-dientes2,
+  .img-dientes3,
+  .img-dientes4 {
+    width: 20px;
+    top: 0;
+    left: 0;
+  }
+
+  .Numeros_superior div,
+  .Numeros_Inferiores div {
+    padding: 6px 16px;
+    font-size: 10px;
+    transform: none;
+  }
+
+  .leyenda {
+    font-size: 12px;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
